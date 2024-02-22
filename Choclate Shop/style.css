@@ -1,0 +1,147 @@
+:root {
+    --scrollbar-width: calc(100vw - 100%);
+}
+::-webkit-scrollbar {
+    display: none;
+}
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+html,
+body {
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-width: 100vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(37, 0, 54);
+}
+.H1{
+    color: white;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+.Form-Box{
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(37, 0, 54, 0.80);
+    border-radius: 10px;
+}
+.BIGBOX1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+.BIGBOX2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.InsideBox{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.LBL{
+    margin: 10px;
+    color: white;
+}
+.IP{
+    margin: 10px;
+    width: 200px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid white;
+    color: white;
+}
+.BTN{
+    width: 120px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid white;
+    background: rgba(36, 0, 67, 0.868);
+    color: white;
+    cursor: pointer;
+}
+.Total{
+    display: flex;
+    background-color: rgba(40, 0, 54, 0.879);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 22px;
+}
+.ListBox{
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(20, 0, 34, 0.856);
+    color: white;
+    height: 150px;
+    border-radius: 10px;
+    overflow: scroll;
+}
+.ListBox::-webkit-scrollbar{display: none;}
+.ListHead{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 10px;
+}
+.Data{
+    margin: 5px;
+}
+.BtnBox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100px;
+    margin: 5px;
+}
+.BTN1{
+    border: 2px solid white;
+    cursor: pointer;
+    outline: none;
+    background: rgba(37, 5, 53, 0.784);
+    color: white;
+    font-weight: bold;
+}
+@media screen and  (max-width: 404px){
+    .H1{
+        font-size: 30px;
+    }
+    .Total{
+        font-size: 18px;
+    }
+}
+@media screen and  (max-width: 500px){
+    .ListHead{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+}

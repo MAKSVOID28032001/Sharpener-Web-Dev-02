@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Atish Kumar Sahu Expense Report In HTML5, CSS3, JavaScript, DOM, LocalStorage Integration, Netlify, Github">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript, DOM, LocalStorage Integration, Netlify, Github">
+    <meta name="author" content="Atish Kumar Sahu (MAKS VOID)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT AWSOME ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FavIcon Package -->
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon//site.webmanifest">
+    <link rel="mask-icon" href="./favicon//safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Chocolate Shop Atish K Sahu</title>
+</head>
+<body>
+    <div class="Heading">
+        <h1 class="H1">Chocolate Shop App</h1>
+    </div>
+    <form class="Form-Box" onsubmit="formData(event)">
+        <div class="BIGBOX1">
+            <div class="Box1">
+                <div class="InsideBox">
+                    <label class="LBL">Chocolate Name:</label>
+                    <input type="text" id="CHOCNAME" class="IP" placeholder="Chocolate Name" title="Chocolate Name" pattern="[A-Za-z0-9\s]+" required>
+                </div>
+                <div class="InsideBox">
+                    <label class="LBL">Chocolate About:</label>
+                    <input type="text" id="CHOCABT" class="IP" placeholder="Chocolate About" title="Chocolate About" pattern="[A-Za-z0-9\s]+" required>
+                </div>
+            </div>
+            <div class="Box1">
+                <div class="InsideBox">
+                    <label class="LBL">Chocolate Price:</label>
+                    <input type="text" id="CHOCPRICE" class="IP" placeholder="Chocolate Price" title="Chocolate Price" pattern="[0-9]+" required>
+                </div>
+                <div class="InsideBox">
+                    <label class="LBL">Chocolate Count:</label>
+                    <input type="text" id="CHOCCOUNT" class="IP" placeholder="Chocolate Quantity" title="Chocolate Quantity" pattern="[0-9]+" required>
+                </div>
+            </div>
+        </div>
+        <div class="BIGBOX2">
+            <div class="Box2">
+                <input type="submit" value="Submit" class="BTN">
+            </div>
+        </div>
+    </form>
+    <div class="ListBox" id="MainList">
+        <!-- <div class="ListHead" id="List">
+            <div class="Data">name</div>
+            <div class="Data">abut</div>
+            <div class="Data">500/-</div>
+            <div class="Data">50</div>
+            <div class="BtnBox">
+                <button class="BTN1">1</button>
+                <button class="BTN1">2</button>
+                <button class="BTN1">3</button>
+            </div>
+        </div> -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
